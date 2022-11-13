@@ -1,16 +1,16 @@
 <template>
   <div>
     <div class="blue-ball" v-if="color == 'blue'">
-      <img src="../../../assets/static/bg2-8-4.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/bg2-8-4.png" />
     </div>
     <div class="red-ball" v-if="color == 'red'">
-      <img src="../../../assets/static/box-chose21.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/box-chose21.png" />
     </div>
     <div class="yellow-ball" v-if="color == 'yellow'">
-      <img src="../../../assets/static/box-chose31.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/box-chose31.png" />
     </div>
     <div class="purple-ball" v-if="color == 'purple'">
-      <img src="../../../assets/static/bg2-9-2.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/bg2-9-2.png" />
     </div>
   </div>
 </template>

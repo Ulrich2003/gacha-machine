@@ -1,26 +1,26 @@
 <template>
   <div class="page">
-    <img src="../../../assets/static/part2.png" class="bg" />
+    <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/part2.png" class="bg" />
     <div class="content">
       <div class="flex-box1">
         <div class="item" v-for="i in obj1" key="i" @click="signin(i)">
           第{{
             i.index == 1 ? "一" : i.index == 2 ? "二" : i.index == 3 ? "三" : i.index == 4 ? "四" : ""
           }}天
-          <img src="../../../assets/static/icon-gift.png" />
+          <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/icon-gift.png" />
           <div>{{i.status?'已领取':'签到领取'}}</div>
         </div>
       </div>
       <div class="flex-box2">
         <div class="item1" v-for="i of obj2" key="i" @click="signin(i)">
           第{{ i.index == 1 ? "五" : "六" }}天
-          <img src="../../../assets/static/icon-gift.png" />
+          <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/icon-gift.png" />
           <div>{{i.status?'已领取':'签到领取'}}</div>
         </div>
         <div class="item2" @click="signin(obj3[0])">
           <div class="flex-box">
             第七天
-            <img src="../../../assets/static/box-chose21.png" />
+            <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/box-chose21.png" />
           </div>
           <div>{{obj3[0].status?'已领取':'签到领取'}}</div>
         </div>

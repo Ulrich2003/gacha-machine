@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <img src="../../../assets/static/daybg.png" class="bg-img" />
+    <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/daybg.png" class="bg-img" />
     <div class="content">
       <div class="flex-box">
         <div class="text">
@@ -10,7 +10,7 @@
           </div>
           <div class="line2">
             <div>每日登录可获得一个神灯币</div>
-            <img src="../../../assets/static/coin.png" />
+            <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/coin.png" />
           </div>
         </div>
         <div class="r-btn" @click="onLogin">{{ status }}</div>

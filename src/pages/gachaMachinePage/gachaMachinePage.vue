@@ -1,10 +1,10 @@
 <template>
   <div class="page">
-    <img src="../../assets/static/topimg.jpg" class="bg" />
+    <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/topimg.jpg" class="bg" />
     <GachaMachine class="gachaMachine" />
     <!-- 底部图片 -->
     <div class="bottombg">
-      <img src="../../assets/static/bottombg.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/bottombg.png" />
     </div>
   </div>
 </template>

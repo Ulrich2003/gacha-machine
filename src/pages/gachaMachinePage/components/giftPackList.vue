@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <img src="../../../assets/static/p3.png" class="bg" />
+    <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/p3.png" class="bg" />
     <div class="content">
       <div class="item" v-for="i in 5" key="i">
         <div class="relative-box">
@@ -10,7 +10,7 @@
         <div class="flex-box">
           <div class="coin" v-for="i in 3">
             <div>
-              <img src="../../../assets/static/coin.png" />
+              <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/coin.png" />
               <text>10</text>
             </div>
           </div>

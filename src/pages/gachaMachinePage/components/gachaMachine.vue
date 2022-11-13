@@ -1,8 +1,8 @@
 <template>
   <div class="page">
     <div class="star">
-      <img src="../../../assets/static/star-left.png" />
-      <img src="../../../assets/static/star-right.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/star-left.png" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/star-right.png" />
     </div>
     <div class="machine">
       <img
@@ -30,44 +30,44 @@
       </div>
     </div>
     <div class="controller">
-      <img src="../../../assets/static/part1.png" class="bg" />
+      <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/part1.png" class="bg" />
       <!-- 按钮组 -->
       <div class="btn-group">
-        <img src="../../../assets/static/left-left.png" class="left-btn" />
+        <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/left-left.png" class="left-btn" />
         <div class="start-btn">
-          <img src="../../../assets/static/o-btn.png" class="btn-img" />
+          <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/o-btn.png" class="btn-img" />
           <div>
             <div class="btn-text-main">开始抽奖</div>
             <div class="btn-text-coin">
               <div>
-                <img src="../../../assets/static/coin.png" />
+                <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/coin.png" />
                 <text>X 10</text>
               </div>
             </div>
           </div>
         </div>
-        <img src="../../../assets/static/left-right.png" class="right-btn" />
+        <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/left-right.png" class="right-btn" />
       </div>
       <!-- 横条 -->
       <div class="tipbg">
-        <img src="../../../assets/static/tipbg.png" />
+        <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/tipbg.png" />
         <text>左右按键切换奖池</text>
       </div>
       <!-- 底座 -->
       <div class="foundation">
-        <img src="../../../assets/static/detialbg.png" class="detialbg" />
+        <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/detialbg.png" class="detialbg" />
         <div class="h-btn">
-          <img src="../../../assets/static/h-btn.png" />
+          <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/h-btn.png" />
           <text>累计奖励</text>
         </div>
         <div class="numbg">
-          <img src="../../../assets/static/numbg.png" />
+          <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/numbg.png" />
           <div class="text-box">
             <div class="title">剩余XX数量</div>
             <div class="content">1000</div>
           </div>
         </div>
-        <img src="../../../assets/static/exit.png" class="exitbg" />
+        <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/exit.png" class="exitbg" />
       </div>
     </div>
     <!-- 每日登录 -->
