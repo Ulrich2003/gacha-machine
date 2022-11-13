@@ -31,6 +31,7 @@
     </div>
     <div class="controller">
       <img src="../../../assets/static/part1.png" class="bg" />
+      <!-- 按钮组 -->
       <div class="btn-group">
         <img src="../../../assets/static/left-left.png" class="left-btn" />
         <div class="start-btn">
@@ -38,26 +39,58 @@
           <div>
             <div class="btn-text-main">开始抽奖</div>
             <div class="btn-text-coin">
-              <img src="../../../assets/static/coin.png" />
+              <div>
+                <img src="../../../assets/static/coin.png" />
+                <text>X 10</text>
+              </div>
             </div>
-            X 10
           </div>
         </div>
         <img src="../../../assets/static/left-right.png" class="right-btn" />
       </div>
+      <!-- 横条 -->
+      <div class="tipbg">
+        <img src="../../../assets/static/tipbg.png" />
+        <text>左右按键切换奖池</text>
+      </div>
+      <!-- 底座 -->
+      <div class="foundation">
+        <img src="../../../assets/static/detialbg.png" class="detialbg" />
+        <div class="h-btn">
+          <img src="../../../assets/static/h-btn.png" />
+          <text>累计奖励</text>
+        </div>
+        <div class="numbg">
+          <img src="../../../assets/static/numbg.png" />
+          <div class="text-box">
+            <div class="title">剩余XX数量</div>
+            <div class="content">1000</div>
+          </div>
+        </div>
+        <img src="../../../assets/static/exit.png" class="exitbg" />
+      </div>
     </div>
+    <!-- 每日登录 -->
+    <daily-login class="daily-login" />
+    <!-- 每日签到 -->
+    <daily-signin class="daily-signin" />
+    <!-- 礼包购买 -->
+    <gift-pack-list class="gift-pack-list" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import Ball from "./ball.vue";
+import dailyLogin from "./dailyLogin.vue";
+import dailySignin from "./dailySignin.vue";
+import giftPackList from "./giftPackList.vue";
 </script>
 
 <style lang="scss" scoped>
-$title-z-index: 300;
-$balls-z-index: 205;
-$lottery-normal-z-index: 200;
 $controller-z-index: 100;
+$lottery-normal-z-index: 200;
+$balls-z-index: 205;
+$title-z-index: 300;
 $btn-group-z-index: 400;
 
 .page {
@@ -290,13 +323,14 @@ $btn-group-z-index: 400;
 .controller {
   width: 100%;
   position: relative;
-
   margin-top: 68vw;
+  // 背景图
   .bg {
     z-index: $controller-z-index;
     position: absolute;
     width: 100%;
   }
+  // 按钮组
   .btn-group {
     width: 100%;
     position: relative;
@@ -320,20 +354,62 @@ $btn-group-z-index: 400;
       .btn-text-main {
         position: absolute;
         top: 8vw;
-        left: 42vw;
+        left: 0;
+        right: 0;
+        text-align: center;
         font-size: 18px;
         font-weight: bold;
         color: #75231e;
         letter-spacing: 1.3px;
         -webkit-text-stroke: 0.2px #75231e;
       }
-      .btn-text-coin{
+      @media screen and (min-width: 660px) {
+        .btn-text-main {
+          font-size: 22px;
+          top: 9vw;
+        }
+      }
+      @media screen and (min-width: 1160px) {
+        .btn-text-main {
+          font-size: 46px;
+          top: 10vw;
+        }
+      }
+
+      .btn-text-coin {
         position: absolute;
-        top: 12vw;
-        left: 42vw;
-        width: 1.5rem;
-        img{
-            width: 100%;
+        top: 12.5vw;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 3%;
+            margin-right: 1%;
+          }
+          text {
+            color: #fefb93;
+            font-size: 14px;
+          }
+          @media screen and (min-width: 660px) {
+            text {
+              font-size: 22px;
+            }
+          }
+          @media screen and (min-width: 1160px) {
+            text {
+              font-size: 46px;
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 1160px) {
+        .btn-text-coin {
+          top: 13vw;
         }
       }
     }
@@ -344,5 +420,205 @@ $btn-group-z-index: 400;
       width: 12vw;
     }
   }
+  // 提示横条
+  .tipbg {
+    position: relative;
+    z-index: $btn-group-z-index;
+    width: 100%;
+    top: 23vw;
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 90%;
+      z-index: 100;
+    }
+    text {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      z-index: 200;
+      font-size: 14px;
+      top: 0.3vw;
+    }
+    @media screen and (min-width: 620px) {
+      text {
+        font-size: 19px;
+        top: 1vw;
+      }
+    }
+    @media screen and (min-width: 900px) {
+      text {
+        font-size: 19px;
+        top: 1.2vw;
+      }
+    }
+    @media screen and (min-width: 1160px) {
+      text {
+        font-size: 28px;
+        top: 1.7vw;
+      }
+    }
+  }
+  // 底座
+  .foundation {
+    position: relative;
+    z-index: $btn-group-z-index;
+    width: 100%;
+    .detialbg {
+      width: 90%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 32vw;
+    }
+    .h-btn {
+      position: relative;
+      width: 20%;
+      top: 33vw;
+      left: 13vw;
+      img {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+      }
+      text {
+        position: absolute;
+        width: 100%;
+        z-index: 200;
+        text-align: center;
+        font-size: 18px;
+        top: 2vw;
+        font-weight: bolder;
+        background-image: linear-gradient(
+          180deg,
+          rgba(114, 34, 28, 1) 0%,
+          rgba(146, 66, 46, 1) 100%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      @media screen and (min-width: 620px) {
+        text {
+          font-size: 22px;
+          top: 2.5vw;
+        }
+      }
+      @media screen and (min-width: 880px) {
+        text {
+          font-size: 25px;
+          top: 2.8vw;
+        }
+      }
+      @media screen and (min-width: 1160px) {
+        text {
+          font-size: 35px;
+          line-height: 35px;
+          top: 3vw;
+        }
+      }
+    }
+    .numbg {
+      position: relative;
+      left: 38vw;
+      top: 33vw;
+      width: 30%;
+      img {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+      }
+      .text-box {
+        position: absolute;
+        z-index: 200;
+        width: 100%;
+        text-align: center;
+        .title {
+          font-weight: bold;
+          color: #c1abf2;
+          margin-top: 2.8vw;
+          line-height: 0px;
+        }
+        .content {
+          color: #f2b569;
+          font-size: 20px;
+          -webkit-text-stroke: 0.3px #f2b569;
+          margin-top: 4.4vw;
+          line-height: 0px;
+        }
+        @media screen and (min-width: 620px) {
+          .title {
+            font-size: 22px;
+            top: 2.5vw;
+          }
+          .content {
+            font-size: 22px;
+            -webkit-text-stroke: 0.3px #f2b569;
+            top: 2.5vw;
+          }
+        }
+        @media screen and (min-width: 880px) {
+          .title {
+            font-size: 22px;
+            top: 2.5vw;
+          }
+          .content {
+            font-size: 30px;
+            -webkit-text-stroke: 0.3px #f2b569;
+            top: 2.5vw;
+          }
+        }
+        @media screen and (min-width: 1160px) {
+          .title {
+            font-size: 25px;
+            top: 2.5vw;
+          }
+          .content {
+            font-size: 34px;
+            -webkit-text-stroke: 0.3px #f2b569;
+            top: 2.5vw;
+          }
+        }
+      }
+    }
+    .exitbg {
+      position: absolute;
+      top: 30vw;
+      right: 13vw;
+      width: 14%;
+    }
+  }
+}
+
+.daily-login {
+  position: relative;
+  z-index: $controller-z-index;
+  width: 97%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 48vw;
+}
+
+.daily-signin {
+  position: relative;
+  z-index: $controller-z-index;
+  width: 97%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 78vw;
+}
+
+.gift-pack-list {
+  position: relative;
+  z-index: $controller-z-index;
+  width: 96%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 140vw;
 }
 </style>
