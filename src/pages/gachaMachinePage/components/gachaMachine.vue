@@ -363,16 +363,34 @@ $btn-group-z-index: 400;
         letter-spacing: 1.3px;
         -webkit-text-stroke: 0.2px #75231e;
       }
-      @media screen and (min-width: 660px) {
+      @media screen and (min-width: 375px) {
+        .btn-text-main {
+          font-size: 16px;
+          top: 7.7vw;
+        }
+      }
+      @media screen and (min-width: 500px) {
+        .btn-text-main {
+          font-size: 20px;
+          top: 7.8vw;
+        }
+      }
+      @media screen and (min-width: 600px) {
         .btn-text-main {
           font-size: 22px;
+          top: 9vw;
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        .btn-text-main {
+          font-size: 28px;
           top: 9vw;
         }
       }
       @media screen and (min-width: 1160px) {
         .btn-text-main {
           font-size: 46px;
-          top: 10vw;
+          top: 9.5vw;
         }
       }
 
@@ -394,6 +412,11 @@ $btn-group-z-index: 400;
           text {
             color: #fefb93;
             font-size: 14px;
+          }
+          @media screen and (min-width: 375px) {
+            text {
+              font-size: 12px;
+            }
           }
           @media screen and (min-width: 660px) {
             text {
@@ -441,6 +464,18 @@ $btn-group-z-index: 400;
       z-index: 200;
       font-size: 14px;
       top: 0.3vw;
+    }
+    @media screen and (min-width: 375px) {
+      text {
+        font-size: 12px;
+        top: -0.6vw;
+      }
+    }
+    @media screen and (min-width: 490px) {
+      text {
+        font-size: 12px;
+        top: 0vw;
+      }
     }
     @media screen and (min-width: 620px) {
       text {
@@ -500,6 +535,18 @@ $btn-group-z-index: 400;
         -webkit-background-clip: text;
         color: transparent;
       }
+      @media screen and (min-width: 375px) {
+        text {
+          font-size: 13px;
+          top: 1.5vw;
+        }
+      }
+      @media screen and (min-width: 490px) {
+        text {
+          font-size: 16px;
+          top: 2vw;
+        }
+      }
       @media screen and (min-width: 620px) {
         text {
           font-size: 22px;
@@ -547,6 +594,28 @@ $btn-group-z-index: 400;
           -webkit-text-stroke: 0.3px #f2b569;
           margin-top: 4.4vw;
           line-height: 0px;
+        }
+        @media screen and (min-width: 375px) {
+          .title {
+            font-size: 12px;
+            top: 2.5vw;
+          }
+          .content {
+            font-size: 16px;
+            -webkit-text-stroke: 0.3px #f2b569;
+            top: 2.5vw;
+          }
+        }
+        @media screen and (min-width: 490px) {
+          .title {
+            font-size: 16px;
+            top: 2.5vw;
+          }
+          .content {
+            font-size: 18px;
+            -webkit-text-stroke: 0.3px #f2b569;
+            top: 2.5vw;
+          }
         }
         @media screen and (min-width: 620px) {
           .title {

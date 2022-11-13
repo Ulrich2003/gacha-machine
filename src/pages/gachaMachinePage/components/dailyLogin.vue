@@ -56,7 +56,12 @@ function onLogin() {
       .text {
         display: flex;
         flex-direction: column;
-        margin-top: 6.5vw;
+        @media screen and (min-width: 375px) {
+          margin-top: 5vw;
+        }
+        @media screen and (min-width: 500px) {
+          margin-top: 6.5vw;
+        }
         gap: 1vw;
         .line1 {
           display: flex;
@@ -79,6 +84,16 @@ function onLogin() {
             font-weight: bolder;
             height: 4.5vw;
             border-radius: 1vw;
+          }
+          @media screen and (min-width: 375px) {
+            div:nth-child(1) {
+              font-size: 16px;
+              -webkit-text-stroke: 0.4px #342656;
+              margin-right: 1.5vw;
+            }
+            div:nth-child(2) {
+              font-size: 12px;
+            }
           }
           @media screen and (min-width: 620px) {
             div:nth-child(1) {
@@ -130,6 +145,9 @@ function onLogin() {
           img {
             width: 5vw;
           }
+          @media screen and (min-width: 375px) {
+            font-size: 12px;
+          }
           @media screen and (min-width: 620px) {
             font-size: 18px;
           }
@@ -158,6 +176,9 @@ function onLogin() {
         color: #fff;
         letter-spacing: 3px;
         -webkit-text-stroke: #fff 0.4px;
+        @media screen and (min-width: 375px) {
+          font-size: 18px;
+        }
         @media screen and (min-width: 620px) {
           font-size: 22px;
         }

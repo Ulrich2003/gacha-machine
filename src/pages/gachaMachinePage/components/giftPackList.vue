@@ -60,6 +60,24 @@
           top: 2.2vw;
           font-weight: bold;
         }
+        @media screen and (min-width: 375px) {
+          font-size: 10px;
+          div:nth-child(1) {
+            top: 0.35vw;
+          }
+          div:nth-child(2) {
+            top: 1.3vw;
+          }
+        }
+        @media screen and (min-width: 490px) {
+          font-size: 14px;
+          div:nth-child(1) {
+            top: 1vw;
+          }
+          div:nth-child(2) {
+            top: 2vw;
+          }
+        }
         @media screen and (min-width: 620px) {
           font-size: 16px;
           div:nth-child(1) {
@@ -164,6 +182,12 @@
           color: #fff;
           letter-spacing: 3px;
           -webkit-text-stroke: #fff 1px;
+          @media screen and (min-width: 375px) {
+            font-size: 18px;
+          }
+          @media screen and (min-width: 490px) {
+            font-size: 20px;
+          }
           @media screen and (min-width: 620px) {
             font-size: 22px;
           }
