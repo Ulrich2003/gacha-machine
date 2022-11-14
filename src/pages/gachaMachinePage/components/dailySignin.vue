@@ -66,7 +66,7 @@ function signin(row:any){
         font-weight: bold;
         align-items: center;
         justify-content: center;
-        background: url("../../../assets/static/s1.png");
+        background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/s1.png");
         background-size: 100%;
         background-repeat: no-repeat;
         width: 17vw;
@@ -123,7 +123,7 @@ function signin(row:any){
         font-weight: bold;
         align-items: center;
         justify-content: center;
-        background: url("../../../assets/static/s1.png");
+        background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/s1.png");
         background-size: 100%;
         background-repeat: no-repeat;
         width: 22vw;
@@ -174,7 +174,7 @@ function signin(row:any){
         font-weight: bold;
         align-items: center;
         justify-content: center;
-        background: url("../../../assets/static/s3.png");
+        background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/s3.png");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 30vw;

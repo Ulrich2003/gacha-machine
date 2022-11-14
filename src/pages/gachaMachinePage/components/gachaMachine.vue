@@ -7,10 +7,10 @@
     <div class="machine">
       <img
         class="lottery-title"
-        src="../../../assets/static/lottery-title01.png"
+        src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/lottery-title01.png"
       />
       <div class="lottery-normal">
-        <img src="../../../assets/static/lottery-normal.png" class="bg" />
+        <img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/lottery-normal.png" class="bg" />
         <div class="balls">
           <Ball class="yellow-ball b1" color="yellow" />
           <Ball class="blue-ball b2" color="blue" />

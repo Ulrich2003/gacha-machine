@@ -170,7 +170,7 @@ function onLogin() {
         height: 9vw;
         overflow: hidden;
         margin-top: 7vw;
-        background: url("../../../assets/static/r-btn.png");
+        background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/r-btn.png");
         background-size: 100%;
         font-size: 20px;
         color: #fff;

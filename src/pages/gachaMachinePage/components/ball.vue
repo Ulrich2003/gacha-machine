@@ -23,7 +23,7 @@ const props = defineProps(["color"]);
 .blue-ball {
   width: 100%;
   height: 100%;
-  background: url("../../../assets/static/pop3.png");
+  background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/pop3.png");
   background-size: 100%;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ const props = defineProps(["color"]);
 .yellow-ball {
   width: 100%;
   height: 100%;
-  background: url("../../../assets/static/pop2.png");
+  background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/pop2.png");
   background-size: 100%;
   display: flex;
   justify-content: center;
@@ -53,7 +53,7 @@ const props = defineProps(["color"]);
 .red-ball {
   width: 100%;
   height: 100%;
-  background: url("../../../assets/static/pop1.png");
+  background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/pop1.png");
   background-size: 100%;
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@ const props = defineProps(["color"]);
 .purple-ball {
   width: 100%;
   height: 100%;
-  background: url("../../../assets/static/pop4.png");
+  background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/pop4.png");
   background-size: 100%;
   display: flex;
   justify-content: center;

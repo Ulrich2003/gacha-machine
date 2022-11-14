@@ -39,7 +39,7 @@
     box-sizing: border-box;
     top: 13vw;
     .item {
-      background: url("../../../assets/static/item-bg.jpg");
+      background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/item-bg.jpg");
       background-size: 100%;
       width: 100%;
       height: 22.8vw;
@@ -124,7 +124,7 @@
         align-items: center;
         gap: 3vw;
         .coin {
-          background: url("../../../assets/static/i-bg.png");
+          background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/i-bg.png");
           background-size: 100%;
           width: 11vw;
           height: 11vw;
@@ -176,7 +176,7 @@
           width: 27vw;
           height: 9vw;
           overflow: hidden;
-          background: url("../../../assets/static/r-btn.png");
+          background: url("https://vichien-public.oss-cn-guangzhou.aliyuncs.com/gachaMachine/r-btn.png");
           background-size: 100%;
           font-size: 20px;
           color: #fff;
